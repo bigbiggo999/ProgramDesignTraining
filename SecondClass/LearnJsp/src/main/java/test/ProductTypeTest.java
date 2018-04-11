@@ -20,17 +20,24 @@ public class ProductTypeTest {
     public Connection conn = null;
     public PreparedStatement pst = null;
 
-    @Test
-    public void test01() throws SQLException {
-
+    public Connection getConn() {
         try {
             Class.forName(className);
-            conn= DriverManager.getConnection(url,name,password);
+            conn=DriverManager.getConnection(url,name,password);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        return conn;
+    }
+    /**
+     * 数据库的查
+     *
+     * */
+    @Test
+    public void test01() throws SQLException {
+        conn = getConn();
         try {
             pst=conn.prepareStatement("SELECT * FROM product.productType");
             ResultSet resultSet = pst.executeQuery();
@@ -54,4 +61,81 @@ public class ProductTypeTest {
         }
 
     }
+    /**
+     * 数据库的增
+     * */
+    @Test
+    public void test02() throws SQLException {
+        conn = getConn();
+        try {
+            pst= conn.prepareStatement("INSERT INTO product.productType VALUES ('java',11)");
+            int rst = pst.executeUpdate();
+            if(rst>0){
+                System.out.println("succeed");
+            }else {
+                System.out.println("failed");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
+            conn.close();
+            pst.close();
+        }
+
+    }
+
+    /**
+     * 数据库的改
+     *
+     * */
+    @Test
+    public void test03() throws SQLException {
+        conn = getConn();
+        try {
+            pst=conn.prepareStatement("UPDATE product.productType SET type=99 WHERE name='java'");
+            pst.executeUpdate();
+            int rst = pst.executeUpdate();
+            if(rst>0){
+                System.out.println("succeed");
+            }else {
+                System.out.println("failed");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
+            conn.close();
+            pst.close();
+        }
+    }
+    /**
+     * 数据库的删
+     *
+     * */
+    @Test
+    public void test04() throws SQLException {
+        conn = getConn();
+        try {
+            pst=conn.prepareStatement("DELETE FROM product.productType WHERE type=99");
+            pst.executeUpdate();
+            int rst = pst.executeUpdate();
+            if(rst==0){
+                System.out.println("succeed");
+            }else{
+                System.out.println("failed");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
+            conn.close();
+            pst.close();
+        }
+    }
+
+
+
+
+
 }
