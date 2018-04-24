@@ -26,10 +26,14 @@ public class ProductTypeTest {
     public void test01() throws SQLException {
         conn = DBUtil.getConn();
         try {
-            pst=conn.prepareStatement("SELECT * FROM product.productType");
+            pst=conn.prepareStatement("SELECT * FROM product.productType WHERE name=?");
+            pst.setString(1,"test");
             ResultSet resultSet = pst.executeQuery();
             List<ProductType> productTypes = new ArrayList<>();
             ProductType productType;
+           if(resultSet.next()){
+               System.out.println(resultSet.getString("type"));
+           }
             while (resultSet.next()){
                 productType = new ProductType();
                 String name = resultSet.getString("name");
@@ -38,7 +42,7 @@ public class ProductTypeTest {
                 productType.setType(type);
                 productTypes.add(productType);
             }
-            System.out.println(productTypes);
+            System.out.println(productTypes.toString());
         } catch (SQLException e) {
             e.printStackTrace();
         }

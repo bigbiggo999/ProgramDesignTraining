@@ -17,6 +17,7 @@ import java.sql.SQLException;
  * @author cong
  * @date 2018/4/17
  */
+@Deprecated
 public class DoLogin extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest req,HttpServletResponse resp) throws IOException {
