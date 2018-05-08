@@ -6,29 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1ad6aecd-0dfa-4bc4-a021-51acb67c4986" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cong/Dao/AdminMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cong/Util/mybatisUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/mybatisTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/LearnJsp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/LearnJsp_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1f7b888f-4a26-4f75-b13b-c6d060ebd915.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1f7b888f-4a26-4f75-b13b-c6d060ebd915.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LearnJsp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LearnJsp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cong/Dao/BaseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cong/Dao/BaseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cong/Dao/UserInfoDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cong/Dao/UserInfoDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cong/entity/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cong/entity/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LearnJsp.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/LearnJsp.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/LearnJsp/WEB-INF/classes/com/cong/servlet/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/LearnJsp/WEB-INF/classes/com/cong/servlet/UserServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cong/Dao/BaseDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cong/Dao/BaseDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cong/Dao/UserInfoDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cong/Dao/UserInfoDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/cong/entity/Admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/cong/entity/Admin.class" afterDir="false" />
-    </list>
+    <list default="true" id="1ad6aecd-0dfa-4bc4-a021-51acb67c4986" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,29 +63,7 @@
     <favorites_list name="LearnJsp" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="mybatisTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/test/mybatisTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users" pinned="false" current-in-tab="false">
-        <entry file="das://1f7b888f-4a26-4f75-b13b-c6d060ebd915/schema/product/table/users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -671,7 +627,7 @@
       <workItem from="1524641459460" duration="615000" />
       <workItem from="1524644223282" duration="1374000" />
       <workItem from="1524882472728" duration="1588000" />
-      <workItem from="1525754802477" duration="4696000" />
+      <workItem from="1525754802477" duration="4798000" />
     </task>
     <servers />
   </component>
@@ -708,11 +664,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37589000" />
+    <option name="totallyTimeSpent" value="37691000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="68" y="22" width="1212" height="778" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5033003" side_tool="true" weight="0.4750733" />
@@ -724,7 +679,7 @@
       <window_info anchor="right" id="Mongo Explorer" order="3" />
       <window_info id="Designer" order="2" />
       <window_info anchor="bottom" id="Tail" order="7" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.18151815" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.18151815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -733,10 +688,9 @@
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32991204" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49669966" visible="true" weight="0.22647059" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49669966" weight="0.22647059" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32734805" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32794118" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32647058" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.47922438" visible="true" weight="0.18481848" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="JRebel" order="2" sideWeight="0.5207756" side_tool="true" weight="0.18481848" />
@@ -748,6 +702,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32794118" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292011" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -1011,20 +966,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/mybatisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="39" column="23" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="das://table:/da28f1a0/1f7b888f-4a26-4f75-b13b-c6d060ebd915/product.users">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/mybatisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
