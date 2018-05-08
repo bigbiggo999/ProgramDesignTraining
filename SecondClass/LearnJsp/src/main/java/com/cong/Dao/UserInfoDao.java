@@ -12,7 +12,7 @@ import java.sql.SQLException;
  */
 public class UserInfoDao extends BaseDao {
     public int insertUser(Connection conn,Admin user){
-        String sql = "insert into users(username,password) values())";
+        String sql = "insert into users(username,password) values(?,?,?))";
         int row = super.exeUpdate(conn,sql,user.getUsername(),user.getPassword());
         return row;
 

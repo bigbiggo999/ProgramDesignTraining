@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$USER_HOME$/Desktop/ODK/ODK Aggregate/create_db_and_user.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/cong/Dao/AdminMapper.xml" dialect="SQLite" />
+  </component>
+</project>

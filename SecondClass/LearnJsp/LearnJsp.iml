@@ -52,5 +52,6 @@
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:6.0.6" level="project" />
     <orderEntry type="library" name="Maven: junit:junit:4.0" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.16.20" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.4.6" level="project" />
   </component>
 </module>

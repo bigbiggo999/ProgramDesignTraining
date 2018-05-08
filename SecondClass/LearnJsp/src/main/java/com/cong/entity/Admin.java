@@ -2,6 +2,7 @@ package com.cong.entity;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 /**
  * @author cong
@@ -9,6 +10,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
+@ToString
 public class Admin {
     private String username;
     private String password;

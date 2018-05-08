@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="AdminMapper">
+    <select id="selectByUsername" parameterType="string" resultType="Admin">
+        select * from `users` where username = #{username};
+    </select>
+    <insert id="insert" parameterType="Admin">
+        insert into product.users(username, password) VALUES(#{username},#{password});
+    </insert>
+    <update id="updateByUsername" parameterType="Admin">
+        update product.users set password=#{password} where username=#{username};
+    </update>
+    <delete id="deleteByUsername" parameterType="string">
+        delete from product.users where username=#{username};
+    </delete>
+</mapper>

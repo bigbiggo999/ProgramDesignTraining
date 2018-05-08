@@ -37,6 +37,13 @@ public class BaseDao {
         return result;
     }
 
+    /**
+     *
+     * @param conn
+     * @param sql
+     * @param values
+     * @return ResultSet
+     */
     public ResultSet exeQuery(Connection conn,String sql,Object... values){
         try {
             pstms = conn.prepareStatement(sql);
@@ -51,6 +58,4 @@ public class BaseDao {
         }
         return rs;
     }
-
-
 }
