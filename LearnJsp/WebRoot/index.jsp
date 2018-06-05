@@ -1,6 +1,6 @@
 <%@page import="com.cong.Dao.UserDao"%>
-<%@page import="com.cong.entity.User"%>
 <%@page import="com.cong.Util.DBUtil"%>
+<%@page import="com.cong.entity.User"%>
 <%@page import="java.sql.Connection"%>
 <%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
 <%
