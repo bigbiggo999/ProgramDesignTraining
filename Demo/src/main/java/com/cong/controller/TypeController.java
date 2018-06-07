@@ -17,6 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
+ * 商品类型的Controller,包含商品类型的增删查改.
  * @author cong
  * @date 2018/6/5
  */
@@ -30,6 +31,11 @@ public class TypeController {
     @Autowired
     private ProductMapper productMapper;
 
+    /**
+     * 新增产品类型
+     * @param type 商品类型
+     * @return modelandview
+     */
     @RequestMapping("add")
     public ModelAndView addType(Type type){
         TypeExample example = new TypeExample();
@@ -48,7 +54,11 @@ public class TypeController {
         return modelAndView;
     }
 
-
+    /**
+     * 获取所有类型
+     * @param request HttpServletRequest
+     * @returnS
+     */
     @RequestMapping("list")
     public String getTypes(HttpServletRequest request){
         TypeExample example = new TypeExample();
@@ -58,6 +68,12 @@ public class TypeController {
         return "manageType";
     }
 
+    /**
+     * 修改类型的信息
+     * @param request
+     * @param typeName
+     * @return
+     */
     @RequestMapping(value = "modify")
     public ModelAndView modifyType(HttpServletRequest request, @RequestParam String typeName){
         TypeExample example = new TypeExample();
@@ -68,12 +84,22 @@ public class TypeController {
          return modelAndView;
     }
 
+    /**
+     * 对修改的商品类型进行保存
+     * @param type
+     * @return
+     */
     @RequestMapping(value = "save")
     public ModelAndView doSave(Type type){
         typeMapper.updateByPrimaryKey(type);
         return new ModelAndView("redirect:/type/list");
     }
 
+    /**
+     * 删除商品的类型,并检测是否存在该类型的商品,若存在,则不允许删除.
+     * @param id
+     * @return
+     */
     @RequestMapping("delete")
     public ModelAndView deleteType(@RequestParam Integer id){
         ModelAndView modelAndView  = new ModelAndView();

@@ -14,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
+ * 商品的一个控制器,包含增删查改
  * @author cong
  * @date 2018/6/5
  */
@@ -23,7 +24,10 @@ public class ProductController {
     @Autowired
     private ProductMapper productMapper;
 
-
+    /**
+     * 获取所有商品列表
+     * @return
+     */
     @RequestMapping(value = "list")
     public ModelAndView getProduct(){
         ModelAndView modelAndView = new ModelAndView();
@@ -35,6 +39,11 @@ public class ProductController {
         return modelAndView;
     }
 
+    /**
+     * 新增一个商品
+     * @param product 商品
+     * @return
+     */
     @RequestMapping(value = "add")
     public ModelAndView addProduct(Product product){
         ModelAndView modelAndView = new ModelAndView();
@@ -51,6 +60,13 @@ public class ProductController {
             return modelAndView;
         }
     }
+
+    /**
+     * 对商品信息进行修改
+     * @param request
+     * @param productName 要修改的商品的名字
+     * @return
+     */
     @RequestMapping(value = "modify")
     public ModelAndView modifyProduct(HttpServletRequest request, @RequestParam String productName){
         ProductExample example = new ProductExample();
@@ -61,12 +77,22 @@ public class ProductController {
         return modelAndView;
     }
 
+    /**
+     * 将修改后的商品信息进行保存,
+     * @param product 修改后的商品
+     * @return modelandview
+     */
     @RequestMapping(value = "save")
     public ModelAndView doSave(Product product){
         productMapper.updateByPrimaryKey(product);
         return new ModelAndView("redirect:/product/list");
     }
 
+    /**
+     * 删除商品
+     * @param id 要删除的商品的id
+     * @return 显示商品的list
+     */
     @RequestMapping(value = "delete")
     public String deleteProduct(@RequestParam Integer id){
         productMapper.deleteByPrimaryKey(id.toString());

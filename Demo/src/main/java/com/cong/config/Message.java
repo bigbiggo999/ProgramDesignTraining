@@ -1,6 +1,7 @@
 package com.cong.config;
 
 /**
+ * 用于返回操作是否成功的信息,以及错误原因
  * @author cong
  * @date 2018/6/5
  */

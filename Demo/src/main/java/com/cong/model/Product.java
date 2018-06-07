@@ -7,7 +7,8 @@ import javax.persistence.Table;
 import java.io.Serializable;
 
 /**
- * @author 
+ * 商品的实体类
+ * @author cong
  */
 @Table(name="product")
 public class Product implements Serializable {

@@ -3,7 +3,8 @@ package com.cong.model;
 import java.io.Serializable;
 
 /**
- * @author 
+ * 商品类型module
+ * @author cong
  */
 public class Type implements Serializable {
     private Integer id;
